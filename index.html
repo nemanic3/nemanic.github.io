@@ -93,10 +93,12 @@ description: 백엔드 개발자 신성현의 포트폴리오입니다.
     </article>
 
     <article class="project-card">
-      <div class="project-card__visual project-card__visual--flower" aria-hidden="true">
-        <span>Local Flower Market</span>
-        <strong>꽃동네</strong>
-        <small>Find · Compare · Order</small>
+      <div class="project-card__visual project-card__visual--flower project-card__visual--image">
+        <img
+          class="project-card__image"
+          src="{{ '/assets/images/projects/kkotdongnae.png' | relative_url }}?v={{ site.asset_version }}"
+          alt="꽃동네 프로젝트 로고"
+        >
       </div>
       <div class="project-card__body">
         <div class="project-card__top">
@@ -111,7 +113,12 @@ description: 백엔드 개발자 신성현의 포트폴리오입니다.
           <li>Location-based Service</li><li>Map</li><li>Social Feed</li>
           <li>Order &amp; Reservation</li><li>OpenAI API</li><li>AI Image Generation</li>
         </ul>
-        <span class="project-card__link project-card__link--disabled">Details coming soon</span>
+        <a
+          class="project-card__link"
+          href="https://github.com/DevITKR/kkotdongnae"
+          target="_blank"
+          rel="noreferrer"
+        >View on GitHub ↗</a>
       </div>
     </article>
 
