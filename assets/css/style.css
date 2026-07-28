@@ -80,7 +80,7 @@ a { color: inherit; }
   flex: 0 0 auto;
   place-items: center;
   border-radius: 50%;
-  background: var(--accent);
+  background: #b8cbe5;
   color: #fff;
   font-size: .9rem;
   font-weight: 600;
@@ -92,6 +92,7 @@ a { color: inherit; }
   height: 100%;
   object-fit: cover;
   object-position: center top;
+  transform: translateY(3%) scale(.92);
 }
 
 .profile__eyebrow, .profile__name, .profile__role { margin: 0; }
