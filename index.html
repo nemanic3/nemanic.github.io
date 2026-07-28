@@ -123,10 +123,12 @@ description: 백엔드 개발자 신성현의 포트폴리오입니다.
     </article>
 
     <article class="project-card">
-      <div class="project-card__visual project-card__visual--graduation" aria-hidden="true">
-        <span>Graduation Checker</span>
-        <strong>홍익<br>졸업봇</strong>
-        <small>Hongik University</small>
+      <div class="project-card__visual project-card__visual--graduation project-card__visual--image">
+        <img
+          class="project-card__image"
+          src="{{ '/assets/images/projects/hongik-graduation-bot.png' | relative_url }}?v={{ site.asset_version }}"
+          alt="홍익졸업봇 프로젝트 발표 이미지"
+        >
       </div>
       <div class="project-card__body">
         <div class="project-card__top">
@@ -138,7 +140,12 @@ description: 백엔드 개발자 신성현의 포트폴리오입니다.
           <p>복잡한 학교 졸업요건을 더 쉽고 정확하게 확인할 수 있도록 돕는 HICC 활동 프로젝트입니다.</p>
         </div>
         <ul class="tag-list" aria-label="홍익졸업봇 성과"><li>HICC</li><li>최우수상</li></ul>
-        <span class="project-card__link project-card__link--disabled">Details coming soon</span>
+        <a
+          class="project-card__link"
+          href="https://github.com/HICC-2025-project-4team/team4"
+          target="_blank"
+          rel="noreferrer"
+        >View on GitHub ↗</a>
       </div>
     </article>
 

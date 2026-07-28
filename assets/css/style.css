@@ -426,7 +426,7 @@ a { color: inherit; }
 }
 
 .project-card__visual--flower { background: #e7eadc; color: #49633f; }
-.project-card__visual--graduation { background: #e2e8e5; color: #315348; }
+.project-card__visual--graduation { background: #1478e8; color: #fff; }
 .project-card__visual--dadok { background: #fff; color: #695c3e; }
 
 .project-card__visual--image::after { display: none; }
