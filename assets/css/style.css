@@ -427,7 +427,18 @@ a { color: inherit; }
 
 .project-card__visual--flower { background: #e7eadc; color: #49633f; }
 .project-card__visual--graduation { background: #e2e8e5; color: #315348; }
-.project-card__visual--dadok { background: #ece7dc; color: #695c3e; }
+.project-card__visual--dadok { background: #fff; color: #695c3e; }
+
+.project-card__visual--image::after { display: none; }
+
+.project-card__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  padding: clamp(1rem, 2vw, 1.75rem);
+  object-fit: contain;
+}
 
 .project-card__body {
   display: flex;
