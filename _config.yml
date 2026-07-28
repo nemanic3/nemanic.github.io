@@ -8,7 +8,7 @@ github_username: nemanic3
 github_url: "https://github.com/nemanic3"
 blog_url: "https://velog.io/@nemanic/posts"
 email: "shinsung2002@gmail.com"
-profile_image: ""
+profile_image: "/assets/images/profile.jpg"
 
 exclude:
   - Gemfile
