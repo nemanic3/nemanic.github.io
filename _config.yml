@@ -9,7 +9,7 @@ github_url: "https://github.com/nemanic3"
 blog_url: "https://velog.io/@nemanic/posts"
 email: "shinsung2002@gmail.com"
 profile_image: "/assets/images/profile.jpg"
-asset_version: "20260728-5"
+asset_version: "20260728-6"
 
 exclude:
   - Gemfile
