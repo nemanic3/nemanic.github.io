@@ -181,14 +181,11 @@ description: 백엔드 개발자 신성현의 포트폴리오입니다.
     <a href="{{ site.github_url }}" target="_blank" rel="noreferrer">
       <span><small>GitHub</small>github.com/nemanic3</span><span aria-hidden="true">↗</span>
     </a>
-    {% if site.email and site.email != "" %}
-      <a href="mailto:{{ site.email }}">
-        <span><small>Email</small>{{ site.email }}</span><span aria-hidden="true">↗</span>
-      </a>
-    {% else %}
-      <div class="contact__placeholder">
-        <span><small>Email</small>이메일 주소를 준비 중입니다</span><span aria-hidden="true">—</span>
-      </div>
-    {% endif %}
+    <a href="{{ site.blog_url }}" target="_blank" rel="noreferrer">
+      <span><small>Blog</small>velog.io/@nemanic</span><span aria-hidden="true">↗</span>
+    </a>
+    <a href="mailto:{{ site.email }}">
+      <span><small>Email</small>{{ site.email }}</span><span aria-hidden="true">↗</span>
+    </a>
   </div>
 </section>

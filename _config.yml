@@ -6,7 +6,8 @@ baseurl: "/nemanic.github.io"
 
 github_username: nemanic3
 github_url: "https://github.com/nemanic3"
-email: ""
+blog_url: "https://velog.io/@nemanic/posts"
+email: "shinsung2002@gmail.com"
 profile_image: ""
 
 exclude:
