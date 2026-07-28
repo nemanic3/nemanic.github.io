@@ -1,0 +1,27 @@
+<aside class="site-sidebar" aria-label="프로필과 섹션 내비게이션">
+  <div class="profile">
+    <div class="profile__image" aria-hidden="true">
+      {% if site.profile_image and site.profile_image != "" %}
+        <img src="{{ site.profile_image | relative_url }}" alt="">
+      {% else %}
+        <span>SH</span>
+      {% endif %}
+    </div>
+    <div class="profile__text">
+      <p class="profile__eyebrow">Portfolio</p>
+      <p class="profile__name">신성현</p>
+      <p class="profile__role">Backend Developer</p>
+    </div>
+  </div>
+
+  <nav class="section-nav" aria-label="포트폴리오 섹션">
+    <a class="section-nav__link is-active" href="{{ '/' | relative_url }}#introduction" aria-current="true"><span>01</span> Introduction</a>
+    <a class="section-nav__link" href="{{ '/' | relative_url }}#experience"><span>02</span> Experience</a>
+    <a class="section-nav__link" href="{{ '/' | relative_url }}#projects"><span>03</span> Projects</a>
+    <a class="section-nav__link" href="{{ '/' | relative_url }}#skills"><span>04</span> Skills</a>
+    <a class="section-nav__link" href="{{ '/' | relative_url }}#awards"><span>05</span> Awards</a>
+    <a class="section-nav__link" href="{{ '/' | relative_url }}#contact"><span>06</span> Contact</a>
+  </nav>
+
+  <p class="sidebar__footer">© {{ 'now' | date: '%Y' }} Shin Seonghyeon</p>
+</aside>
