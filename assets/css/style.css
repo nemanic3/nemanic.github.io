@@ -508,6 +508,7 @@ a { color: inherit; }
   width: fit-content;
   margin-top: 2rem;
   font-size: .76rem;
+  text-decoration: none;
 }
 
 .project-card__link--disabled { color: #959c96; }
