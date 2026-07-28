@@ -2,7 +2,7 @@ title: 신성현
 description: 꾸준히 고민하고 성장하는 백엔드 개발자 신성현의 포트폴리오
 lang: ko
 url: "https://nemanic3.github.io"
-baseurl: ""
+baseurl: "/nemanic.github.io"
 
 github_username: nemanic3
 github_url: "https://github.com/nemanic3"
