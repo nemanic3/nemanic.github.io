@@ -108,19 +108,44 @@ a { color: inherit; }
 .profile__name {
   margin-top: .3rem;
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 1.3rem;
+  font-size: clamp(1.45rem, 1.8vw, 1.75rem);
   font-weight: 700;
   line-height: 1.35;
 }
 
 .profile__role {
   color: var(--muted);
-  font-size: .82rem;
+  font-size: .92rem;
+}
+
+.profile__contact {
+  display: grid;
+  width: 100%;
+  padding-top: 1rem;
+  gap: .6rem;
+  border-top: 1px solid var(--line);
+}
+
+.profile__contact a {
+  color: #4f5953;
+  font-size: .76rem;
+  line-height: 1.45;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.profile__contact span {
+  display: block;
+  margin-bottom: .05rem;
+  color: #969d97;
+  font-size: .6rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
 }
 
 .section-nav {
   display: flex;
-  margin: auto 0;
+  margin: clamp(2.5rem, 6vh, 4.5rem) 0 auto;
   flex-direction: column;
   gap: .2rem;
 }
@@ -131,7 +156,7 @@ a { color: inherit; }
   align-items: center;
   gap: .8rem;
   color: var(--muted);
-  font-size: clamp(.85rem, 1vw, 1rem);
+  font-size: clamp(.95rem, 1.08vw, 1.08rem);
   text-decoration: none;
   transition: color 160ms ease;
 }
@@ -205,19 +230,40 @@ a { color: inherit; }
 }
 
 .hero h1 {
-  max-width: 12em;
+  display: flex;
+  max-width: 13em;
+  flex-direction: column;
   font-size: clamp(2.65rem, 5.2vw, 5.6rem);
-  line-height: 1.22;
+  line-height: 1.15;
 }
 
-.hero h1 em {
+.hero__hello {
+  margin-bottom: 1.2rem;
+  color: var(--muted);
+  font-size: .34em;
+  font-weight: 500;
+  letter-spacing: -.02em;
+}
+
+.hero__statement {
+  margin-bottom: .35em;
+  color: var(--ink);
+  font-size: .55em;
+  line-height: 1.35;
+}
+
+.hero h1 strong {
   color: var(--accent);
-  font-style: normal;
+  font-size: .82em;
+  font-weight: 700;
+  line-height: 1.28;
 }
 
 .hero__description {
-  max-width: 43rem;
-  margin: clamp(2.5rem, 6vw, 5rem) 0 0;
+  max-width: 39rem;
+  margin: clamp(2.5rem, 4vw, 3.5rem) 0 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
   color: var(--muted);
   font-size: clamp(1rem, 1.35vw, 1.2rem);
   line-height: 1.9;
@@ -385,7 +431,8 @@ a { color: inherit; }
   overflow: hidden;
   flex-direction: column;
   justify-content: space-between;
-  background: var(--surface);
+  border: 1px solid var(--line);
+  background: #fff;
   color: var(--accent);
 }
 
@@ -421,13 +468,13 @@ a { color: inherit; }
 }
 
 .project-card__visual--acre {
-  background: var(--accent);
-  color: #eef3ee;
+  background: #fff;
+  color: var(--accent);
 }
 
-.project-card__visual--flower { background: #e7eadc; color: #49633f; }
-.project-card__visual--graduation { background: #1478e8; color: #fff; }
-.project-card__visual--dadok { background: #fff; color: #695c3e; }
+.project-card__visual--flower,
+.project-card__visual--graduation,
+.project-card__visual--dadok { background: #fff; }
 
 .project-card__visual--image::after { display: none; }
 
@@ -448,7 +495,7 @@ a { color: inherit; }
 
 .project-card__top {
   display: flex;
-  margin-bottom: clamp(2.5rem, 5vw, 4.5rem);
+  margin-bottom: clamp(2rem, 3.5vw, 3rem);
   align-items: center;
   justify-content: space-between;
   color: var(--muted);
@@ -483,12 +530,47 @@ a { color: inherit; }
   max-width: 35rem;
   margin: 1rem 0 0;
   color: var(--muted);
-  font-size: .9rem;
+  font-size: .95rem;
+  line-height: 1.8;
+}
+
+.project-card__facts {
+  display: grid;
+  margin: 1.75rem 0 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+}
+
+.project-card__facts div {
+  display: grid;
+  padding: .75rem 0;
+  grid-template-columns: 4rem minmax(0, 1fr);
+  gap: .75rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.project-card__facts dt,
+.project-card__facts dd {
+  margin: 0;
+}
+
+.project-card__facts dt {
+  color: #8d958f;
+  font-size: .65rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.project-card__facts dd {
+  color: #465049;
+  font-size: .8rem;
+  line-height: 1.6;
 }
 
 .tag-list, .skill-list {
   display: flex;
-  margin: 2rem 0 0;
+  margin: 1.5rem 0 0;
   padding: 0;
   flex-wrap: wrap;
   gap: .5rem;
@@ -646,6 +728,7 @@ a { color: inherit; }
   }
   .profile { padding-bottom: 1.4rem; align-items: flex-start; flex-direction: column; }
   .profile__image { width: min(13rem, 70vw); height: auto; }
+  .profile__contact { max-width: 30rem; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
   .section-nav {
     margin: 0 calc(var(--page-padding) * -1);
     padding: 0 var(--page-padding);

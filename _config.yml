@@ -10,7 +10,7 @@ blog_url: "https://velog.io/@nemanic/posts"
 email: "shinsung2002@gmail.com"
 phone: "010-6787-4225"
 profile_image: "/assets/images/profile.jpg"
-asset_version: "20260728-9"
+asset_version: "20260803-1"
 
 exclude:
   - Gemfile

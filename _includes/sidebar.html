@@ -12,6 +12,14 @@
       <p class="profile__name">신성현</p>
       <p class="profile__role">Backend Developer</p>
     </div>
+    <div class="profile__contact" aria-label="빠른 연락처">
+      <a href="mailto:{{ site.email }}">
+        <span>Email</span>{{ site.email }}
+      </a>
+      <a href="tel:{{ site.phone | remove: '-' }}">
+        <span>Phone</span>{{ site.phone }}
+      </a>
+    </div>
   </div>
 
   <nav class="section-nav" aria-label="포트폴리오 섹션">
